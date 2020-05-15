@@ -25,25 +25,27 @@ const useStyle = makeStyles({
   container: {
     width: "75%",
     height: "35vh",
-    backgroundColor: "red",
     display: "flex",
+    position:"relative",
+    top:30,
+    bottom:30,
     margin:"auto"
   },
   left: {
     width: "30%",
     height: "100%",
-    backgroundColor: "yellow",
     display:"flex",
     alignItems: "center",
+    color:"#99173C"
   },
   right: {
     width: "60%",
     height: "100%",
-    backgroundColor: "green",
     display:"flex",
     alignItems: "center",
     position:"relative",
-    left:"10%"
+    left:"10%",
+    color:"#EFFFCD"
   },
 });
 export default Info;
