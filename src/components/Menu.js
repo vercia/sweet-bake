@@ -5,8 +5,8 @@ const Menu = () => {
     const classes = useStyles()
 
     return (
-        <div className={classes.container}>
-            Menu component
+        <div className={classes.container} id='menu'>
+            menu component
         </div>
     )
 }
