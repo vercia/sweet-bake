@@ -1,25 +1,59 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Info from "./Info";
+import CardItem from "./CardItem";
+import { CardActions } from "@material-ui/core";
 
 const Menu = () => {
-    const classes = useStyles()
+  const classes = useStyles();
 
-    return (
-        <div className={classes.container} id='menu'>
-            menu component
-        </div>
-    )
-}
+  const cards = [
+      {
+        title:"Cakes"
+      },
+      {
+        title:"Cookies"
+      },
+      {
+        title:"Cupcakes"
+      },
+  ]
+
+  return (
+    <div className={classes.container} id="menu">
+      <Info />
+      <div className={classes.cardsMenu}>
+      {cards.map(item => {
+          return (
+              <CardItem title={item.title} image={item.image} key={item.title} />
+          )
+      })
+      }
+      </div>
+    </div>
+  );
+};
 
 const useStyles = makeStyles(() => {
-    return {
-        container: {
-            backgroundColor: 'purple',
-            width: '100%',
-            height: '100vh',
-            display: 'flex',
-        }
-    };
+  return {
+    container: {
+      backgroundColor: "#2E2633",
+      width: "100%",
+      height: "100vh",
+      display: "flex",
+    //   justifyContent:"center",
+    flexDirection:"column",
+  
+      
+    },
+    cardsMenu:{
+        display:"flex",
+        flexDirection:"row",
+        width:"75%",
+        height:"50vh",
+        margin:"auto"
+    }
+  };
 });
 
-export default Menu
+export default Menu;

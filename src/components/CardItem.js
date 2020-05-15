@@ -7,7 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import cake from "../images/cake.jpg";
 
-const CardItem = () => {
+const CardItem = (props) => {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
@@ -25,7 +25,7 @@ const CardItem = () => {
             component="h2"
             className={classes.cardTitle}
           >
-            Cakes
+            {props.title}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -39,6 +39,7 @@ const useStyles = makeStyles({
     backgroundColor: "transparent",
     boxShadow: "none",
     border: "none",
+    margin:"auto",
     "&:hover": {
       boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
     },
