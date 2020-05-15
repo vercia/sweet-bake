@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-const MenuItem = (props) => {
+const NavItem = (props) => {
   return (
     <div>
       <Link
@@ -18,4 +18,4 @@ const MenuItem = (props) => {
   );
 };
 
-export default MenuItem;
+export default NavItem;

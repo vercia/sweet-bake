@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import useWindowScrollPosition from '@rehooks/window-scroll-position';
-import MenuItem from './MenuItem';
+import NavItem from './NavItem';
 
 const Nav = () => {
   const classes = useStyles();
@@ -36,7 +36,7 @@ const Nav = () => {
         <ul className={classes.navlist}>
           {navItem.map((item) => {
             return (
-              <MenuItem key={item.title} title={item.title} path={item.path} />
+              <NavItem key={item.title} title={item.title} path={item.path} />
             );
           })}
         </ul>
@@ -51,9 +51,10 @@ const useStyles = makeStyles(() => {
       backgroundColor: 'green',
       width: '100%',
       height: '8vh',
-      display:'flex',
-      justifyContent:'center',
-      position:'fixed'
+      display: 'flex',
+      justifyContent: 'center',
+      position: 'fixed',
+      zIndex: 3
     },
     navlist: {
       marginTop: 0,
@@ -69,6 +70,7 @@ const useStyles = makeStyles(() => {
       position: 'fixed',
       zIndex: 3,
       backgroundColor: 'red',
+      textTransform: 'uppercase'
       // '@media (min-width:768px)': {
       //   fontSize: '1.7rem'
       // },
