@@ -1,61 +1,58 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Swiper from 'react-id-swiper';
 import backgroundOne from '../images/background.jpg';
 import backgroundTwo from '../images/background1.jpg';
 import backgroundThree from '../images/background3.jpg';
-import Paper from '@material-ui/core/Paper';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
 
 const Home = () => {
   const classes = useStyles();
-  const params = {
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 4500,
-      disableOnInteraction: false
+  const content = [
+    {
+      title: 'Vulputate Mollis Ultricies Fermentum Parturient',
+      description:
+        'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
+      button: 'Read More',
+      image: `${backgroundOne}`
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+    {
+      title: 'Tortor Dapibus Commodo Aenean Quam',
+      description:
+        'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
+      button: 'Discover',
+      image: `${backgroundTwo}`
+    },
+    {
+      title: 'Phasellus volutpat metus',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
+      button: 'Buy now',
+      image: `${backgroundThree}`
     }
-  };
+  ];
 
   return (
     <div className={classes.container} id='home'>
-      <div className={classes.swipeContainer}>
-        <Swiper {...params}>
-          <div>
-            <Paper
-              className={classes.paper}
-              style={{
-                backgroundImage: `url(${backgroundOne})`
-              }}
-            >
-              {/* <div>
-                <h1 class='animate'>An animated element</h1>
-              </div> */}
-            </Paper>
+      <Slider className='slider-wrapper' autoplay={4000}>
+        {content.map((item, index) => (
+          <div
+            key={index}
+            className='slider-content'
+            style={{
+              background: `url('${item.image}') no-repeat center`,
+              backgroundSize:'100vh',
+              height:'100vh'
+            }}
+          >
+            <div className='inner'>
+              <h1>{item.title}</h1>
+              <p>{item.description}</p>
+              <button>{item.button}</button>
+            </div>
           </div>
-          <div>
-            <Paper
-              className={classes.paper}
-              style={{
-                backgroundImage: `url(${backgroundTwo})`
-              }}
-            ></Paper>
-          </div>
-          <div>
-            <Paper
-              className={classes.paper}
-              style={{
-                backgroundImage: `url(${backgroundThree})`
-              }}
-            ></Paper>
-          </div>
-        </Swiper>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };
@@ -73,10 +70,10 @@ const useStyles = makeStyles(() => {
       margin: 'auto'
     },
     container: {
-      backgroundColor: 'yellow',
+      // backgroundColor: 'yellow',
       width: '100%',
       height: '100vh',
-      display: 'flex'
+      // display: 'flex'
     },
     swipeContainer: {
       display: 'flex',
