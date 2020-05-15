@@ -1,21 +1,47 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React,{useState} from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-scroll";
 
 const NavItem = (props) => {
+  const classes = useStyles();
+  const [open, setOpen] = useState(true);
+
+  const SetMenu = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div>
+    <li className={classes.liMenu}>
       <Link
-        activeClass='active'
+        activeClass={classes.active}
         to={props.path}
         spy={true}
         smooth={true}
-        duration={500}
-        className='hvr-underline-from-center'
+        duration={1000}
+        onClick={SetMenu}
       >
         {props.title}
       </Link>
-    </div>
+    </li>
   );
 };
+
+const useStyles = makeStyles({
+  liMenu: {
+    fontSize: "25px",
+    color: "#EFFFCD",
+    textTransform: "uppercase",
+    letterSpacing: "2px",
+    display: "flex",
+    cursor: "pointer",
+    marginBottom: "40px",
+    "&:hover":{
+      color:"#99173C"
+    }
+  },
+  active:{
+    color:"#99173C"
+  }
+});
 
 export default NavItem;

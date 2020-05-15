@@ -1,106 +1,168 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import useWindowScrollPosition from '@rehooks/window-scroll-position';
-import NavItem from './NavItem';
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import NavItem from "./NavItem";
 
 const Nav = () => {
   const classes = useStyles();
-  let position = useWindowScrollPosition();
 
-  const navItem = [
+  const [open, setOpen] = useState(true);
+
+  const SetMenu = () => {
+    setOpen(!open);
+  };
+
+  const menu = [
     {
-      path: 'home',
-      title: 'Strona główna'
+      path:"home",
+      title:"Strona główna"
     },
     {
-      path: 'menu',
-      title: 'Menu'
+      path:"menu",
+      title:"Menu"
     },
     {
-      path: 'services',
-      title: 'Usługi'
+      path:"services",
+      title:"Usługi"
     },
     {
-      path: 'gallery',
-      title: 'Galeria'
+      path:"galery",
+      title:"Galeria"
     },
     {
-      path: 'contact',
-      title: 'Kontakt'
-    }
-  ];
+      path:"contact",
+      title:"Kontakt"
+    },
+  ]
 
   return (
-    <div className={classes.container}>
-      <div className={position.y < 100 ? classes.navlist : classes.navbar}>
-        <ul className={classes.navlist}>
-          {navItem.map((item) => {
-            return (
-              <NavItem key={item.title} title={item.title} path={item.path} />
-            );
-          })}
+    <div className={classes.nav}>
+      <div onClick={SetMenu} className={classes.openMenu}>
+        <ion-icon name="menu"></ion-icon>
+      </div>
+
+      <div className={open ? classes.menu : classes.menuOpen}>
+        <div onClick={SetMenu} className={classes.closeMenu}>
+          <ion-icon name="close"></ion-icon>
+        </div>
+
+        <ul className={classes.ulMenu}>
+        {menu.map(item => {
+          return <NavItem path={item.path} title={item.title} key={item.title}/> 
+        })}
         </ul>
+
+        <div className={classes.mediaMenu}>
+          <ul className={classes.ulMedia}>
+            <li className={classes.liMedia}>
+              <a
+                href="https://pl-pl.facebook.com/"
+                target="_blank"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li className={classes.liMedia}>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
 
-const useStyles = makeStyles(() => {
-  return {
-    container: {
-      backgroundColor: 'green',
-      width: '100%',
-      height: '8vh',
-      display: 'flex',
-      justifyContent: 'center',
-      position: 'fixed',
-      zIndex: 3
+const useStyles = makeStyles({
+  nav: {
+    zIndex: 10,
+    position: "fixed",
+    width: "100%",
+    height: "60px",
+    // borderBottom: "1px solid white",
+    color: "white",
+  },
+
+  openMenu: {
+    position: "absolute",
+    left: 30,
+    cursor: "pointer",
+    fontSize: "45px",
+    top: 20,
+    transition: "0.5s",
+    color:"#DCE9BE",
+    "&:hover": {
+      color: "#99173C",
     },
-    navlist: {
-      marginTop: 0,
-      listStyle: 'none',
-      display: 'flex',
-      padding: 8,
-      minHeight: '6vh',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      width: '40%',
-      fontSize: '1.2rem',
-      color: 'white',
-      position: 'fixed',
-      zIndex: 3,
-      backgroundColor: 'red',
-      textTransform: 'uppercase'
-      // '@media (min-width:768px)': {
-      //   fontSize: '1.7rem'
-      // },
-      // '@media (min-width:1024px)': {
-      //   width: '35%',
-      //   backgroundColor: 'transparent',
-      //   right: 0,
-      //   transition: '0.5s',
-      //   cursor: 'pointer'
-      // },
-      // '@media (min-width:1440px)': {
-      //   width: '45%',
-      //   fontSize: '1.6rem'
-      // }
-    },
-    navbar: {
-      display: 'flex',
-      padding: 8,
-      minHeight: '6vh',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      width: '100vw',
-      fontSize: '22px',
-      position: 'fixed',
-      zIndex: 3,
-      cursor: 'pointer',
-      backgroundColor: 'orange',
-      transition: '0.5s'
+  },
+
+  menu: {
+    position: "fixed",
+    zIndex: 2,
+    width: "30%",
+    height: "100vh",
+    backgroundColor: "#fff",
+    borderRight: "1px solid rgba(0, 0, 0, 0.1)",
+    left: "-70%",
+    transition: "1.5s",
+  },
+
+  menuOpen: {
+    position: "fixed",
+    zIndex: 10,
+    width: "30%",
+    height: "100vh",
+    backgroundColor: "#555152",
+    borderRight: "1px solid rgba(0, 0, 0, 0.1)",
+    left: 0,
+    transition: "1.5s",
+  },
+  closeMenu: {
+    position: "relative",
+    lineHeight: "60px",
+    float: "right",
+    marginRight: "20px",
+    cursor: "pointer",
+    color:"#DCE9BE",
+    fontSize: "30px",
+    transition:"0.5s",
+    "&:hover": {
+      color:"#99173C"
     }
-  };
+  },
+
+  mediaMenu: {
+    position: "relative",
+    top: "50%",
+    color: "black",
+  },
+
+  ulMenu: {
+    listStyle: "none",
+    position: "relative",
+    top: "40%",
+    left: "4%",
+    transform: "translate(0%, -50%)",
+  },
+
+
+  ulMedia: {
+    position: "relative",
+    top: "50%",
+  },
+
+  liMedia: {
+    display: "inline-block",
+    paddingRight: "10px",
+    fontSize: 25,
+  },
+
 });
 
 export default Nav;
