@@ -25,7 +25,7 @@ const Nav = () => {
       title: 'Usługi'
     },
     {
-      path: 'galery',
+      path: 'gallery',
       title: 'Galeria'
     },
     {
