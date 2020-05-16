@@ -23,29 +23,30 @@ const Info = () => {
 };
 const useStyle = makeStyles({
   container: {
-    width: "75%",
-    height: "35vh",
-    display: "flex",
-    position:"relative",
-    top:30,
-    bottom:30,
-    margin:"auto"
+    width: '75%',
+    height: '35vh',
+    display: 'flex',
+    position: 'relative',
+    top: 30,
+    bottom: 30,
+    margin: 'auto'
   },
   left: {
-    width: "30%",
-    height: "100%",
-    display:"flex",
-    alignItems: "center",
-    color:"#99173C"
+    width: '30%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    color: '#c5a645'
   },
   right: {
-    width: "60%",
-    height: "100%",
-    display:"flex",
-    alignItems: "center",
-    position:"relative",
-    left:"10%",
-    color:"#EFFFCD"
-  },
+    width: '60%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    position: 'relative',
+    left: '10%',
+    color: 'white',
+    fontSize:'1.2em'
+  }
 });
 export default Info;

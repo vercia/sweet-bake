@@ -14,7 +14,6 @@ const CardItem = (props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          title="Delux apartament"
           image={cake}
         />
 
@@ -36,23 +35,23 @@ const useStyles = makeStyles({
   root: {
     width: 300,
     height: 370,
-    backgroundColor: "transparent",
-    boxShadow: "none",
-    border: "none",
-    margin:"auto",
-    "&:hover": {
-      boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
-    },
+    backgroundColor: 'transparent',
+    boxShadow: 'none',
+    border: 'none',
+    margin: 'auto',
+    '&:hover': {
+      boxShadow: '10px 10px 5px 0px rgba(0,0,0,0.45)'
+    }
   },
   media: {
-    height: 310,
+    height: 310
   },
   cardTitle: {
-    color: "gold",
-    fontSize: "20px",
+    color: '#c5a645',
+    fontSize: '20px',
     fontWeight: 800,
-    textAlign: "center",
-  },
+    textAlign: 'center'
+  }
 });
 
 export default CardItem;
