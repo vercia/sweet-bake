@@ -12,10 +12,8 @@
     "react": "^16.13.1",
     "react-animated-slider": "^2.0.0",
     "react-dom": "^16.13.1",
-    "react-id-swiper": "^3.0.0",
     "react-scripts": "3.4.1",
-    "react-scroll": "^1.7.16",
-    "swiper": "^5.3.8"
+    "react-scroll": "^1.7.16"
   },
   "scripts": {
     "start": "react-scripts start",
