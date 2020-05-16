@@ -41,7 +41,7 @@
   opacity: 1;
 }
 
-.slide.current button {
+.slide.current .btn {
   opacity: 1;
   transform: translateX(0);
 }
