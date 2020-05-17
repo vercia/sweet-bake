@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Menu from './components/Menu'
 import Services from './components/Services';
 import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Menu />
       <Services />
       <Gallery />
+      <Contact />
     </div>
   );
 }
