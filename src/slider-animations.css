@@ -27,7 +27,6 @@
 .slide.current h1,
 .slide.animateIn.next h1,
 .slide.animateIn.previous button,
-.slide.current button,
 .slide.animateIn.next button,
 .slide.animateIn.previous p,
 .slide.current p,
@@ -40,6 +39,11 @@
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
   opacity: 1;
+}
+
+.slide.current .btn {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .slide.animateIn.previous p,

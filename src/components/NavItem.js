@@ -28,19 +28,19 @@ const NavItem = (props) => {
 
 const useStyles = makeStyles({
   liMenu: {
-    fontSize: "25px",
-    color: "#EFFFCD",
-    textTransform: "uppercase",
-    letterSpacing: "2px",
-    display: "flex",
-    cursor: "pointer",
-    marginBottom: "40px",
-    "&:hover":{
-      color:"#99173C"
+    fontSize: '25px',
+    color: 'white',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    display: 'flex',
+    cursor: 'pointer',
+    marginBottom: '40px',
+    '&:hover': {
+      color: '#c5a645'
     }
   },
-  active:{
-    color:"#99173C"
+  active: {
+    color: '#c5a645'
   }
 });
 

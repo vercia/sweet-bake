@@ -41,14 +41,14 @@ const Home = () => {
             className='slider-content'
             style={{
               background: `url('${item.image}') no-repeat center`,
-              backgroundSize:'100vh',
-              height:'100vh'
+              backgroundSize: '100vh',
+              height: '100vh'
             }}
           >
             <div className='inner'>
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-              <button>{item.button}</button>
+              <button className='btn'>{item.button}</button>
             </div>
           </div>
         ))}
@@ -70,10 +70,8 @@ const useStyles = makeStyles(() => {
       margin: 'auto'
     },
     container: {
-      // backgroundColor: 'yellow',
       width: '100%',
-      height: '100vh',
-      // display: 'flex'
+      height: '100vh'
     },
     swipeContainer: {
       display: 'flex',
