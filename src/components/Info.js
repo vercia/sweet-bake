@@ -27,8 +27,6 @@ const useStyle = makeStyles({
     height: '35vh',
     display: 'flex',
     position: 'relative',
-    top: 30,
-    bottom: 30,
     margin: 'auto'
   },
   left: {
