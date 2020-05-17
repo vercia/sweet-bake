@@ -16,7 +16,7 @@ const ContactItem = (props) => {
 
 const useStyles = makeStyles({
   cardBorder: {
-    borderLeft: '2px solid #c5a645',
+    borderLeft: '1px solid #c5a645',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
