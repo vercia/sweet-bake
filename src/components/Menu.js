@@ -2,20 +2,31 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import CardItem from './CardItem';
-import { CardActions } from '@material-ui/core';
+import bake1 from "../images/bake8.jpg";
+import bake2 from '../images/bake3.jpg';
+import bake3 from '../images/bake4.jpg';
+import bake4 from '../images/bake6.jpg';
+
 
 const Menu = () => {
   const classes = useStyles();
 
   const cards = [
     {
-      title: 'Cakes'
+      title: 'Cakes',
+      image:bake1
     },
     {
-      title: 'Cookies'
+      title: 'Cookies',
+      image:bake2
     },
     {
-      title: 'Cupcakes'
+      title: 'Cupcakes',
+      image:bake3
+    },
+    {
+      title: 'Costam',
+      image:bake4
     }
   ];
 
@@ -43,11 +54,12 @@ const useStyles = makeStyles(() => {
       flexDirection: 'column'
     },
     cardsMenu: {
-      display: 'flex',
-      flexDirection: 'row',
-      width: '75%',
-      height: '50vh',
-      margin: 'auto'
+      height:"49%",
+      position:"relative",
+      display: 'grid',
+      gridTemplateColumns :'25% 25% 25% 25%',
+      gridColumnGap:0,
+
     }
   };
 });
