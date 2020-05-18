@@ -2,41 +2,25 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import CardItem from './CardItem';
-import bake1 from "../images/bake8.jpg";
-import bake2 from '../images/bake3.jpg';
-import bake3 from '../images/bake4.jpg';
-import bake4 from '../images/bake6.jpg';
-
+import infoCards from './infoCards'
 
 const Menu = () => {
   const classes = useStyles();
-
-  const cards = [
-    {
-      title: 'Cakes',
-      image:bake1
-    },
-    {
-      title: 'Cookies',
-      image:bake2
-    },
-    {
-      title: 'Cupcakes',
-      image:bake3
-    },
-    {
-      title: 'Costam',
-      image:bake4
-    }
-  ];
 
   return (
     <div className={classes.container} id='menu'>
       <Info />
       <div className={classes.cardsMenu}>
-        {cards.map((item) => {
+        {infoCards.map((item) => {
           return (
-            <CardItem title={item.title} image={item.image} key={item.title} />
+            <CardItem
+              title={item.title}
+              image={item.image}
+              spanOne={item.spanOne}
+              titleDesc={item.titleDesc}
+              options={item.options}
+              key={item.title}
+            />
           );
         })}
       </div>
@@ -54,12 +38,11 @@ const useStyles = makeStyles(() => {
       flexDirection: 'column'
     },
     cardsMenu: {
-      height:"49%",
-      position:"relative",
+      height: '49%',
+      position: 'relative',
       display: 'grid',
-      gridTemplateColumns :'25% 25% 25% 25%',
-      gridColumnGap:0,
-
+      gridTemplateColumns: '25% 25% 25% 25%',
+      gridColumnGap: 0
     }
   };
 });
