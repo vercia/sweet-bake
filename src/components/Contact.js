@@ -51,9 +51,7 @@ const useStyles = makeStyles(() => {
     container: {
       backgroundColor: "#111",
       height: "100vh",
-      width: "100vw",
-
-
+      width: "100vw"
     },
     content:{
       position:"relative",
@@ -66,8 +64,8 @@ const useStyles = makeStyles(() => {
     },
     contact: {
       width: "80%",
-      gridTemplateColumns: "35% 30% 35%",
-      height: "70%",
+      gridTemplateColumns: "35% 30% 30%",
+      height: "55%",
       borderTop: "1px solid #c5a645",
       borderBottom: "1px solid #c5a645",
       borderRight: "2px solid #c5a645",
