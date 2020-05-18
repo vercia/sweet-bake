@@ -1,62 +1,63 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Service from './Service'
 
 const Home = () => {
   const classes = useStyles();
+
+  const services = [
+    {
+      icon: <i class='fas fa-birthday-cake' />,
+      title: 'Torty na każdą okazję',
+      description:
+        'Upieczemy dla Państwa tort na dowolną okazję: ślub, urodziny, imieniny, komunia, chrzciny, święta, spotkanie towarzyskie lub biznesowe..'
+    },
+    {
+      icon: <i class='fas fa-truck' />,
+      title: 'Dostawa',
+      description:
+        'Państwa zamówienie dostarczymy w każde miejsce na terenie Trójmiasta.'
+    },
+    {
+      icon: <i class='fas fa-heart' />,
+      title: 'Indywidualne zamówienie',
+      description:
+        'Pieczemy również na życzenie. Od Państwa zależy jaki tort ma mieć smak czy wygląd.'
+    },
+    {
+      icon: <i class='fas fa-parking' />,
+      title: 'Miejsce parkingowe',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus.'
+    },
+    {
+      icon: <i class='fas fa-glass-cheers' />,
+      title: 'Imprezy prywatne',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus.'
+    },
+    {
+      icon: <i class='fas fa-shopping-bag' />,
+      title: 'Na wynos',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus.'
+    }
+  ];
 
   return (
     <div className={classes.container} id='services'>
       <h1 className={classes.title}>Nasze usługi</h1>
       <div className={classes.icons}>
-        <div className={classes.service}>
-          <i class='fas fa-birthday-cake' />
-          <p className={classes.titleDesc}>Torty na każdą okazję</p>
-          <p className={classes.desc}>
-            Upieczemy dla Państwa tort na dowolną okazję: ślub, urodziny,
-            imieniny, komunia, chrzciny, święta, spotkanie towarzyskie lub
-            biznesowe..
-          </p>
-        </div>
-        <div className={classes.service}>
-          <i class='fas fa-truck' />
-          <p className={classes.titleDesc}>Dostawa</p>
-          <p className={classes.desc}>
-            Państwa zamówienie dostarczymy w każde miejsce na terenie
-            Trójmiasta.
-          </p>
-        </div>
-        <div className={classes.service}>
-          <i class='fas fa-heart' />
-          <p className={classes.titleDesc}>Indywidualne zamówienie</p>
-          <p className={classes.desc}>
-            Pieczemy również na życzenie. Od Państwa zależy jaki tort ma mieć smak czy
-            wygląd
-          </p>
-        </div>
-        <div className={classes.service}>
-          <i class='fas fa-parking' />
-          <p className={classes.titleDesc}>Miejsce parkingowe</p>
-          <p className={classes.desc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            finibus.
-          </p>
-        </div>
-        <div className={classes.service}>
-          <i class='fas fa-glass-cheers' />
-          <p className={classes.titleDesc}>Imprezy prywatne</p>
-          <p className={classes.desc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            finibus.
-          </p>
-        </div>
-        <div className={classes.service}>
-          <i class='fas fa-shopping-bag' />
-          <p className={classes.titleDesc}>Na wynos</p>
-          <p className={classes.desc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            finibus.
-          </p>
-        </div>
+        {services.map((item) => {
+          return (
+            <Service
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+              key={item.key}
+            />
+          );
+        })}
       </div>
     </div>
   );
@@ -87,22 +88,6 @@ const useStyles = makeStyles(() => {
       height: '50vh',
       margin: 'auto',
       marginTop: 10
-    },
-    service: {
-      padding:'10px 0px',
-      display: 'flex',
-      flexDirection: 'column',
-      textAlign: 'center',
-    },
-    titleDesc: {
-      fontSize: '1.4em',
-      color: '#c5a645',
-      margin:"15px auto"
-    },
-    desc: {
-      color: 'white',
-      fontSize: '1.2em',
-      margin: "10px auto"
     }
   };
 });
