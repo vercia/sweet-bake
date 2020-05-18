@@ -29,12 +29,12 @@ const useStyles = makeStyles({
     whiteSpace: 'pre-wrap'
   },
   title: {
-    fontSize: '30px',
+    fontSize: '1.5em',
     color: '#c5a645'
   },
   text: {
     color: 'white',
-    fontSize: '20px',
+    fontSize: '1.1em',
     lineHeight: '1.7em'
   }
 });
