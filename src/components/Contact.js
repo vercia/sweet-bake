@@ -9,7 +9,7 @@ const Contact = () => {
     {
       title: "Godziny pracy",
       text:
-        "Poniedziałek	zamknięte\nWtorek-Piątek	12:00 – 17:00\nSobota-Niedziela 11:00 – 15:00",
+        "Poniedziałek	zamknięte\nWtorek-Piątek: 12:00 – 17:00\nSobota-Niedziela: 11:00 – 15:00",
     },
     {
       title: "Lokalizacja",
@@ -34,8 +34,8 @@ const Contact = () => {
         </div>
         <div className={classes.pays}>
           <div></div>
-          <p>Dostępne opcje płatności</p>
-          <ul>
+          <p className={classes.title}>Dostępne opcje płatności</p>
+          <ul className={classes.payments}>
             <li>Przelew bankowy</li>
             <li>Gotówka</li>
             <li>Płatność kartą</li>
@@ -74,8 +74,8 @@ const useStyles = makeStyles(() => {
     },
     pays: {
       display: "grid",
-      gridTemplateColumns: "10% 30% 60%",
-      height:"30%",
+      gridTemplateColumns: "5% 30% 40%",
+      height:"15%",
       color:"white",
       borderLeft: "1px solid #c5a645",
       borderBottom: "1px solid #c5a645",
@@ -83,6 +83,20 @@ const useStyles = makeStyles(() => {
       width: "80%",
       margin: "auto",
     },
+    payments:{
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"space-around",
+      color: 'white',
+      fontSize: '1.1em',
+      lineHeight: '1.7em',
+      position:"relative",
+      alignItems:"center"
+    },
+    title:{
+      fontSize: '1.5em',
+      color: '#c5a645'
+    }
   };
 });
 
