@@ -58,6 +58,37 @@ const CardItem = (props) => {
           <p className={classes.option}>{props.options}</p>
         </DialogContentText>
         <p className={classes.span}>{props.spanOne}</p>
+        {props.title === 'Inne wypieki' ? (
+          <div>
+            <DialogTitle
+              id='alert-dialog-slide-title'
+              className={classes.title}
+            >
+              {props.titleDescTwo}
+            </DialogTitle>
+            <DialogContentText
+              id='alert-dialog-description'
+              className={classes.content}
+            >
+              <p className={classes.option}>{props.optionsTwo}</p>
+            </DialogContentText>
+            <p className={classes.span}>{props.spanTwo}</p>
+            <DialogTitle
+              id='alert-dialog-slide-title'
+              className={classes.title}
+            >
+              {props.titleDescThree}
+            </DialogTitle>
+            <DialogContentText
+              id='alert-dialog-description'
+              className={classes.content}
+            >
+              <p className={classes.option}>{props.optionsThree}</p>
+            </DialogContentText>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </Dialog>
     </div>
   );

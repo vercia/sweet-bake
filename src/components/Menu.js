@@ -17,8 +17,13 @@ const Menu = () => {
               title={item.title}
               image={item.image}
               spanOne={item.spanOne}
+              spanTwo={item.spanTwo}
               titleDesc={item.titleDesc}
+              titleDescTwo={item.titleDescTwo}
+              titleDescThree={item.titleDescThree}
               options={item.options}
+              optionsTwo={item.optionsTwo}
+              optionsThree={item.optionsThree}
               key={item.title}
             />
           );
