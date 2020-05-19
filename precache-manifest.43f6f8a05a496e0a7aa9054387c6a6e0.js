@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7130418bbddd534b45c5f1eb623acd6",
+    "revision": "6af445136e8da08c32b72ea741e3553e",
     "url": "/sweet-bake/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sweet-bake/static/css/2.ed90cac3.chunk.css"
   },
   {
-    "revision": "0f543ac164cf2813d0bc",
+    "revision": "3d94d50e63f7532649c0",
     "url": "/sweet-bake/static/css/main.fcb113a3.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sweet-bake/static/js/2.57fd22a6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f543ac164cf2813d0bc",
-    "url": "/sweet-bake/static/js/main.b7290f15.chunk.js"
+    "revision": "3d94d50e63f7532649c0",
+    "url": "/sweet-bake/static/js/main.5cdbcf40.chunk.js"
   },
   {
     "revision": "dbed00e213a1c1b16d74",
