@@ -17,6 +17,7 @@ const ContactItem = (props) => {
 const useStyles = makeStyles({
   cardBorder: {
     borderLeft: '1px solid #c5a645',
+    borderBottom: '1px solid #c5a645',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -45,7 +46,7 @@ const useStyles = makeStyles({
   },
   text: {
     color: 'white',
-    fontSize: '0.9em',
+    fontSize: '1em',
     lineHeight: '1.5em',
     wordBreak: 'break-word',
     '@media (min-width: 768px)': {

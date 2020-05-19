@@ -8,7 +8,6 @@ const Gallery = () => {
 
   return (
     <div className={classes.container} id='gallery'>
-      <h1 className={classes.title}>Galeria</h1>
       <ImageGallery
         items={images}
         showPlayButton={false}
@@ -29,17 +28,9 @@ const useStyles = makeStyles(() => {
       width: '100vw',
       height: '100vh',
       display: 'flex',
-      flexDirection: 'column'
-    },
-    title: {
-      color: '#c5a645',
-      fontSize: '2.2em',
-      justifyContent: 'center',
-      display: 'flex',
-      margin: '40px auto',
-      '@media (min-width: 1024px)': {
-        fontSize:'2.5em'
-      }
+      flexDirection: 'column',
+      justifyContent:'center',
+      alignItems:'center'
     }
   };
 });

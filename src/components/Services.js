@@ -46,7 +46,6 @@ const Home = () => {
 
   return (
     <div className={classes.container} id='services'>
-      <h1 className={classes.title}>Nasze usługi</h1>
       <div className={classes.icons}>
         {services.map((item) => {
           return (
@@ -68,26 +67,11 @@ const useStyles = makeStyles(() => {
     container: {
       backgroundColor: '#111',
       width: '100vw',
-      height: '138vh',
+      height: 'auto',
       display: 'flex',
       flexDirection: 'column',
       '@media (min-width: 768px)': {
         height: '100vh'
-      }
-    },
-    title: {
-      display: 'flex',
-      justifyContent: 'center',
-      width: '100%',
-      fontSize: '2.2em',
-      marginTop: '3%',
-      color: '#c5a645',
-      '@media (min-width: 768px)': {
-        marginTop: '8%'
-      },
-      '@media (min-width:1024px)': {
-        fontSize: '2.5em',
-        marginTop: '5%'
       }
     },
     icons: {
@@ -96,7 +80,7 @@ const useStyles = makeStyles(() => {
       justifyContent: 'space-around',
       width: '95%',
       margin: 'auto',
-      marginTop: '-5%',
+      marginTop: '3%',
       '@media (min-width: 768px)': {
         gridTemplateColumns: '30% 30% 30%',
         width: '90%',

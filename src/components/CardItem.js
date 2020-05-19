@@ -103,7 +103,7 @@ const useStyles = makeStyles({
   },
   cardTitle: {
     color: 'white',
-    fontSize: '1.4em',
+    fontSize: '1em',
     fontWeight: 100,
     backgroundColor: '#c5a645',
     width: '80%',
@@ -112,10 +112,11 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '80%',
+    marginTop: '130%',
     transition: '1s',
     '@media (min-width: 768px)': {
-      height: '20%'
+      height: '20%',
+      marginTop: '80%'
     },
     '@media (min-width:1024px)': {
       fontSize: '1.5em'
@@ -123,7 +124,7 @@ const useStyles = makeStyles({
   },
   cardTitleHover: {
     color: 'black',
-    fontSize: '1.4em',
+    fontSize: '1em',
     fontWeight: 100,
     backgroundColor: 'white',
     width: '80%',
@@ -132,11 +133,12 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '80%',
+    marginTop: '130%',
     transition: '1s',
     cursor: 'pointer',
     '@media (min-width: 768px)': {
-      height: '20%'
+      height: '20%',
+      marginTop:'80%'
     },
     '@media (min-width:1024px)': {
       fontSize: '1.5em'

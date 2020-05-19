@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => {
       }
     },
     titleDesc: {
-      fontSize: '1.3em',
+      fontSize: '1.2em',
       color: '#c5a645',
       margin: '10px auto',
       '@media (min-width: 768px)': {
@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => {
     },
     desc: {
       color: 'white',
-      fontSize: '1.1em',
+      fontSize: '1em',
       margin: '0px auto',
       '@media (min-width: 768px)': {
         margin: '10px auto'
