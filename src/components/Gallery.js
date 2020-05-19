@@ -8,7 +8,7 @@ const Gallery = () => {
 
   return (
     <div className={classes.container} id='gallery'>
-      <p className={classes.title}>Galeria</p>
+      <h1 className={classes.title}>Galeria</h1>
       <ImageGallery
         items={images}
         showPlayButton={false}
@@ -32,9 +32,13 @@ const useStyles = makeStyles(() => {
     },
     title: {
       color: '#c5a645',
-      fontSize: '2.3em',
+      fontSize: '2.2em',
       justifyContent: 'center',
-      display: 'flex'
+      display: 'flex',
+      margin: '40px auto',
+      '@media (min-width: 1024px)': {
+        fontSize:'2.5em'
+      }
     }
   };
 });

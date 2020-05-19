@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Service from './Service'
+import Service from './Service';
 
 const Home = () => {
   const classes = useStyles();
@@ -68,26 +68,44 @@ const useStyles = makeStyles(() => {
     container: {
       backgroundColor: '#111',
       width: '100%',
-      height: '100vh',
+      height: '138vh',
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      '@media (min-width: 768px)': {
+        height: '100vh'
+      }
     },
     title: {
       display: 'flex',
       justifyContent: 'center',
       width: '100%',
-      fontSize: '2.7em',
+      fontSize: '2.2em',
       marginTop: '3%',
-      color: '#c5a645'
+      color: '#c5a645',
+      '@media (min-width: 768px)': {
+        marginTop: '8%'
+      },
+      '@media (min-width:1024px)': {
+        fontSize: '2.5em',
+        marginTop: '5%'
+      }
     },
     icons: {
       display: 'grid',
-      gridTemplateColumns: '30% 30% 30%',
+      gridTemplateRows: 'auto auto auto',
       justifyContent: 'space-around',
-      width: '90%',
-      height: '50vh',
+      width: '95%',
       margin: 'auto',
-      marginTop: 10
+      marginTop: '-5%',
+      '@media (min-width: 768px)': {
+        gridTemplateColumns: '30% 30% 30%',
+        width: '90%',
+        height: '50vh',
+        marginTop: '4%'
+      },
+      '@media (min-width:1024px)': {
+        marginTop: '0%'
+      }
     }
   };
 });

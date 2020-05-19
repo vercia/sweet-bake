@@ -40,9 +40,7 @@ const Home = () => {
             key={index}
             className='slider-content'
             style={{
-              background: `url('${item.image}') no-repeat center`,
-              backgroundSize: '100vh',
-              height: '100vh'
+              background: `url('${item.image}') no-repeat center`
             }}
           >
             <div className='inner'>
@@ -59,16 +57,6 @@ const Home = () => {
 
 const useStyles = makeStyles(() => {
   return {
-    paper: {
-      backgroundPosition: 'center 85%',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      display: 'flex',
-      color: 'white',
-      width: '80vw',
-      height: '80vh',
-      margin: 'auto'
-    },
     container: {
       width: '100%',
       height: '100vh'

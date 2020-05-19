@@ -28,7 +28,7 @@ const NavItem = (props) => {
 
 const useStyles = makeStyles({
   liMenu: {
-    fontSize: '25px',
+    fontSize: '1.3em',
     color: 'white',
     textTransform: 'uppercase',
     letterSpacing: '2px',

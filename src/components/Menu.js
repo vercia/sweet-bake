@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import CardItem from './CardItem';
-import infoCards from './infoCards'
+import infoCards from './infoCards';
 
 const Menu = () => {
   const classes = useStyles();
@@ -43,11 +43,17 @@ const useStyles = makeStyles(() => {
       flexDirection: 'column'
     },
     cardsMenu: {
-      height: '49%',
+      height: '30%',
       position: 'relative',
       display: 'grid',
       gridTemplateColumns: '25% 25% 25% 25%',
-      gridColumnGap: 0
+      gridColumnGap: 0,
+      '@media (min-width: 768px)': {
+        height: '45%'
+      },
+      '@media (min-width:1024px)': {
+        height: '50%'
+      }
     }
   };
 });

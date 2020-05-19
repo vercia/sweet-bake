@@ -103,17 +103,23 @@ const useStyles = makeStyles({
   },
   cardTitle: {
     color: 'white',
-    fontSize: '28px',
+    fontSize: '1.4em',
     fontWeight: 100,
     backgroundColor: '#c5a645',
     width: '80%',
-    height: '20%',
+    height: '30%',
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '80%',
-    transition: '1s'
+    transition: '1s',
+    '@media (min-width: 768px)': {
+      height: '20%'
+    },
+    '@media (min-width:1024px)': {
+      fontSize: '1.5em'
+    }
   },
   cardTitleHover: {
     color: 'black',

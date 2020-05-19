@@ -85,7 +85,6 @@ const useStyles = makeStyles({
   nav: {
     zIndex: 10,
     position: 'fixed',
-    width: '100%',
     height: '60px',
     color: 'white'
   },
@@ -93,12 +92,15 @@ const useStyles = makeStyles({
     position: 'absolute',
     left: 30,
     cursor: 'pointer',
-    fontSize: '45px',
+    fontSize: '2.2em',
     top: 20,
     transition: '0.5s',
     color: '#c5a645',
     '&:hover': {
       color: 'white'
+    },
+    '@media (min-width:1440px)': {
+      fontSize: '2.8em'
     }
   },
   menu: {
@@ -114,24 +116,33 @@ const useStyles = makeStyles({
   menuOpen: {
     position: 'fixed',
     zIndex: 10,
-    width: '30%',
+    width: '75%',
     height: '100vh',
     backgroundColor: 'rgba(0, 0, 0, 0.95)',
     borderRight: '1px solid rgba(0, 0, 0, 0.1)',
     left: 0,
-    transition: '1.5s'
+    transition: '1.5s',
+    '@media (min-width:768px)': {
+      width: '40%'
+    },
+    '@media (min-width:1024px)': {
+      width: '30%'
+    }
   },
   closeMenu: {
     position: 'relative',
-    lineHeight: '60px',
+    lineHeight: '80px',
     float: 'right',
     marginRight: '20px',
     cursor: 'pointer',
     color: 'white',
-    fontSize: '30px',
+    fontSize: '1.6em',
     transition: '0.5s',
     '&:hover': {
       color: '#c5a645'
+    },
+    '@media (min-width:1024px)': {
+      fontSize: '2em'
     }
   },
   mediaMenu: {
@@ -155,7 +166,10 @@ const useStyles = makeStyles({
   liMedia: {
     display: 'inline-block',
     paddingRight: '10px',
-    fontSize: '2em'
+    fontSize: '1.6em',
+    '@media (min-width:1024px)': {
+      fontSize: '2em'
+    }
   }
 });
 

@@ -7,7 +7,7 @@ const ContactItem = (props) => {
   return (
     <div className={classes.cardBorder}>
       <div className={classes.content}>
-        <span className={classes.title}>{props.title}</span>
+        <p className={classes.title}>{props.title}</p>
         <p className={classes.text}>{props.text}</p>
       </div>
     </div>
@@ -23,19 +23,37 @@ const useStyles = makeStyles({
   },
   content: {
     position: 'relative',
-    width: '75%',
-    height: '75%',
+    width: '100%',
+    height: '100%',
     fontWeight: 100,
-    whiteSpace: 'pre-wrap'
+    whiteSpace: 'pre-wrap',
+    '@media (min-width: 1440px)': {
+      width: '75%',
+      height: '75%'
+    }
   },
   title: {
-    fontSize: '1.5em',
-    color: '#c5a645'
+    fontSize: '1.2em',
+    color: '#c5a645',
+    margin: '5px auto',
+    '@media (min-width: 768px)': {
+      fontSize: '1.5em'
+    },
+    '@media (min-width: 1024px)': {
+      margin: '10px auto'
+    }
   },
   text: {
     color: 'white',
-    fontSize: '1.1em',
-    lineHeight: '1.7em'
+    fontSize: '0.9em',
+    lineHeight: '1.5em',
+    wordBreak: 'break-word',
+    '@media (min-width: 768px)': {
+      fontSize: '1.1em'
+    },
+    '@media (min-width: 1440px)': {
+      lineHeight: '1.7em'
+    }
   }
 });
 export default ContactItem;
