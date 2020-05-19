@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <div className={classes.container} id='home'>
-      <Slider className='slider-wrapper' autoplay={4000}>
+      <Slider className='slider-wrapper' autoplay={4000} touchDisabled={true}>
         {content.map((item, index) => (
           <div
             key={index}
