@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/sweet-bake/static/css/main.fcb113a3.chunk.css",
+    "main.js": "/sweet-bake/static/js/main.b7290f15.chunk.js",
+    "main.js.map": "/sweet-bake/static/js/main.b7290f15.chunk.js.map",
+    "runtime-main.js": "/sweet-bake/static/js/runtime-main.96f4b0bf.js",
+    "runtime-main.js.map": "/sweet-bake/static/js/runtime-main.96f4b0bf.js.map",
+    "static/css/2.ed90cac3.chunk.css": "/sweet-bake/static/css/2.ed90cac3.chunk.css",
+    "static/js/2.57fd22a6.chunk.js": "/sweet-bake/static/js/2.57fd22a6.chunk.js",
+    "static/js/2.57fd22a6.chunk.js.map": "/sweet-bake/static/js/2.57fd22a6.chunk.js.map",
+    "index.html": "/sweet-bake/index.html",
+    "precache-manifest.ac98cffd3540d394ce95de9044738aa7.js": "/sweet-bake/precache-manifest.ac98cffd3540d394ce95de9044738aa7.js",
+    "service-worker.js": "/sweet-bake/service-worker.js",
+    "static/css/2.ed90cac3.chunk.css.map": "/sweet-bake/static/css/2.ed90cac3.chunk.css.map",
+    "static/css/main.fcb113a3.chunk.css.map": "/sweet-bake/static/css/main.fcb113a3.chunk.css.map",
+    "static/js/2.57fd22a6.chunk.js.LICENSE.txt": "/sweet-bake/static/js/2.57fd22a6.chunk.js.LICENSE.txt",
+    "static/media/background.jpg": "/sweet-bake/static/media/background.377564a3.jpg",
+    "static/media/background1.jpg": "/sweet-bake/static/media/background1.ca77f49f.jpg",
+    "static/media/background3.jpg": "/sweet-bake/static/media/background3.22aeca87.jpg",
+    "static/media/bake1.jpg": "/sweet-bake/static/media/bake1.7498499c.jpg",
+    "static/media/bake10.jpg": "/sweet-bake/static/media/bake10.99beccb7.jpg",
+    "static/media/bake2.jpg": "/sweet-bake/static/media/bake2.526f4be8.jpg",
+    "static/media/bake3.jpg": "/sweet-bake/static/media/bake3.4d29832b.jpg",
+    "static/media/bake4.jpg": "/sweet-bake/static/media/bake4.d3166348.jpg",
+    "static/media/bake5.jpg": "/sweet-bake/static/media/bake5.64b87ba4.jpg",
+    "static/media/bake6.jpg": "/sweet-bake/static/media/bake6.ffb9edb1.jpg",
+    "static/media/bake7.jpg": "/sweet-bake/static/media/bake7.9080acb9.jpg",
+    "static/media/bake8.jpg": "/sweet-bake/static/media/bake8.7ace2e44.jpg",
+    "static/media/bake9.jpg": "/sweet-bake/static/media/bake9.26c881f0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96f4b0bf.js",
+    "static/css/2.ed90cac3.chunk.css",
+    "static/js/2.57fd22a6.chunk.js",
+    "static/css/main.fcb113a3.chunk.css",
+    "static/js/main.b7290f15.chunk.js"
+  ]
+}
