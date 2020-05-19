@@ -55,16 +55,14 @@ const useStyles = makeStyles(() => {
       textAlign: 'center'
     },
     content: {
-      // width:"80%"
       position: 'absolute',
       display: 'table',
       tableLayout: 'fixed',
       width: '100%',
-      // height: '60%',
       margin: 'auto',
       marginTop: '5%',
       '@media (min-width: 768px)': {
-        top: '30%',
+        top: '10%',
         width: '90%',
         position: 'relative',
         marginTop: '0%'
@@ -76,16 +74,17 @@ const useStyles = makeStyles(() => {
     },
     contact: {
       width: '95%',
-      // gridTemplateColumns: '35% 30% 35%',
       gridTemplateRows: '35% 30% 35%',
       height: '55%',
       borderTop: '1px solid #c5a645',
-      // borderBottom: '1px solid #c5a645',
       borderRight: '2px solid #c5a645',
       display: 'grid',
       margin: 'auto',
       '@media (min-width: 768px)': {
-        width: '90%'
+        width: '90%',
+        gridTemplateColumns: '35% 30% 35%',
+        borderBottom: '1px solid #c5a645',
+        gridTemplateRows: 'none'
       }
     },
     pays: {
@@ -108,17 +107,20 @@ const useStyles = makeStyles(() => {
     payments: {
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'space-around',
+
       color: 'white',
       fontSize: '1em',
       lineHeight: '1.5em',
       position: 'relative',
-      alignItems: 'center',
+
       margin: '5px auto',
+      textAlign: 'left',
       '@media (min-width: 768px)': {
         fontSize: '1.1em',
         flexDirection: 'row',
-        width: '90%'
+        width: '90%',
+        justifyContent: 'space-around',
+        alignItems: 'center'
       },
       '@media (min-width: 1024px)': {
         width: '75%'
