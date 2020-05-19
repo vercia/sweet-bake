@@ -45,7 +45,7 @@ const useStyle = makeStyles({
     display: 'flex',
     alignItems: 'center',
     color: '#c5a645',
-    fontSize: '0.9em',
+    fontSize: '0.8em',
     marginTop: '-10%',
     '@media (min-width: 768px)': {
       marginTop: '0%',
