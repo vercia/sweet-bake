@@ -15,6 +15,7 @@ const Gallery = () => {
         autoPlay={true}
         slideInterval={4000}
         slideDuration={1500}
+        disableSwipe={true}
         preventDefaultTouchmoveEvent={true}
       />
     </div>

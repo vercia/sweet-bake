@@ -149,10 +149,16 @@ const useStyles = makeStyles({
   },
   mediaMenu: {
     position: 'relative',
-    top: '30%',
+    top: '15%',
     color: '#c5a645',
     display: 'flex',
-    left: '4%'
+    left: '4%',
+    '@media (min-width:375px)': {
+      top: '25%'
+    },
+    '@media (min-width:768px)': {
+      top: '30%'
+    }
   },
   ulMenu: {
     listStyle: 'none',
