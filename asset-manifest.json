@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sweet-bake/static/css/main.ef926463.chunk.css",
-    "main.js": "/sweet-bake/static/js/main.00e39281.chunk.js",
-    "main.js.map": "/sweet-bake/static/js/main.00e39281.chunk.js.map",
+    "main.js": "/sweet-bake/static/js/main.2740eadc.chunk.js",
+    "main.js.map": "/sweet-bake/static/js/main.2740eadc.chunk.js.map",
     "runtime-main.js": "/sweet-bake/static/js/runtime-main.96f4b0bf.js",
     "runtime-main.js.map": "/sweet-bake/static/js/runtime-main.96f4b0bf.js.map",
     "static/css/2.ed90cac3.chunk.css": "/sweet-bake/static/css/2.ed90cac3.chunk.css",
     "static/js/2.57fd22a6.chunk.js": "/sweet-bake/static/js/2.57fd22a6.chunk.js",
     "static/js/2.57fd22a6.chunk.js.map": "/sweet-bake/static/js/2.57fd22a6.chunk.js.map",
     "index.html": "/sweet-bake/index.html",
-    "precache-manifest.39721f757e56b2a407a7aa0f8cbe138e.js": "/sweet-bake/precache-manifest.39721f757e56b2a407a7aa0f8cbe138e.js",
+    "precache-manifest.4a3097f7a1cac62f7f6e606fd3d070ad.js": "/sweet-bake/precache-manifest.4a3097f7a1cac62f7f6e606fd3d070ad.js",
     "service-worker.js": "/sweet-bake/service-worker.js",
     "static/css/2.ed90cac3.chunk.css.map": "/sweet-bake/static/css/2.ed90cac3.chunk.css.map",
     "static/css/main.ef926463.chunk.css.map": "/sweet-bake/static/css/main.ef926463.chunk.css.map",
@@ -33,6 +33,6 @@
     "static/css/2.ed90cac3.chunk.css",
     "static/js/2.57fd22a6.chunk.js",
     "static/css/main.ef926463.chunk.css",
-    "static/js/main.00e39281.chunk.js"
+    "static/js/main.2740eadc.chunk.js"
   ]
 }
