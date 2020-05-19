@@ -54,7 +54,7 @@ const Home = () => {
               icon={item.icon}
               title={item.title}
               description={item.description}
-              key={item.key}
+              key={item.icon}
             />
           );
         })}
@@ -67,7 +67,7 @@ const useStyles = makeStyles(() => {
   return {
     container: {
       backgroundColor: '#111',
-      width: '100%',
+      width: '100vw',
       height: '138vh',
       display: 'flex',
       flexDirection: 'column',

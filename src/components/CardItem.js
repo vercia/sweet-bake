@@ -26,7 +26,7 @@ const CardItem = (props) => {
       onMouseLeave={() => setHover(false)}
       onMouseEnter={() => setHover(true)}
     >
-      {hover == true ? (
+      {hover === true ? (
         <h2 className={classes.cardTitleHover} onClick={handleOpen}>
           Zobacz więcej
         </h2>

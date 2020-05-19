@@ -116,7 +116,8 @@ const useStyles = makeStyles(() => {
       margin: '5px auto',
       '@media (min-width: 768px)': {
         fontSize: '1.1em',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        width: '90%'
       },
       '@media (min-width: 1024px)': {
         width: '75%'

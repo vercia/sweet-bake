@@ -58,7 +58,7 @@ const Home = () => {
 const useStyles = makeStyles(() => {
   return {
     container: {
-      width: '100%',
+      width: '100vw',
       height: '100vh'
     },
     swipeContainer: {

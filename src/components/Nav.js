@@ -59,6 +59,7 @@ const Nav = () => {
               <a
                 href='https://pl-pl.facebook.com/'
                 target='_blank'
+                rel='noopener noreferrer'
                 style={{ textDecoration: 'none', color: 'black' }}
               >
                 <ion-icon name='logo-facebook'></ion-icon>
@@ -69,6 +70,7 @@ const Nav = () => {
               <a
                 href='https://www.instagram.com/'
                 target='_blank'
+                rel='noopener noreferrer'
                 style={{ textDecoration: 'none', color: 'black' }}
               >
                 <ion-icon name='logo-instagram'></ion-icon>
